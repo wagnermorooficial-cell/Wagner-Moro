@@ -50,8 +50,8 @@ const DEFAULT_SECTORS: Sector[] = [
 ];
 
 const DEFAULT_CONFIG: SystemConfig = {
-  companyName: 'Sua Empresa',
-  systemName: 'Chat Corporativo'
+  companyName: 'Nexus',
+  systemName: 'System'
 };
 
 const App: React.FC = () => {
@@ -310,14 +310,21 @@ const App: React.FC = () => {
                 </div>
             </div>
 
-            <div className="mt-auto p-4 border-t border-slate-800">
+            <div className="mt-auto border-t border-slate-800">
                 <button 
                     onClick={handleLogout}
-                    className="w-full py-2 text-xs text-red-400 hover:text-red-300 hover:bg-red-950/30 border border-transparent hover:border-red-900/50 rounded transition-all flex items-center justify-center gap-2"
+                    className="w-full py-3 text-xs text-red-400 hover:text-red-300 hover:bg-red-950/30 transition-all flex items-center justify-center gap-2"
                 >
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" /></svg>
                     DESCONECTAR
                 </button>
+                
+                {/* Branding Rodapé Sidebar */}
+                <div className="py-2 bg-slate-950 text-center border-t border-slate-900">
+                     <p className="text-[9px] text-slate-700 font-mono">
+                         POWERED BY <span className="font-bold text-slate-600">NEXUS CORP</span>
+                     </p>
+                </div>
             </div>
         </div>
 
